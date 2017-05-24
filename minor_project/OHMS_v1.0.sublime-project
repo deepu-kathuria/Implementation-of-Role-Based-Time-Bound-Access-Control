@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "admin"
+		},
+		{
+			"path": "c:\\xampp\\htdocs\\myproject\\OHM_v1.0\\patient"
+		},
+		{
+			"path": "c:\\xampp\\htdocs\\myproject\\OHM_v1.0\\doctor"
+		},
+		{
+			"path": "c:\\xampp\\htdocs\\myproject\\OHM_v1.0\\counsellor"
+		},
+		{
+			"path": "res"
+		}
+	]
+}

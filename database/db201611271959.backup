@@ -1,0 +1,803 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.1.21
+-- Dumped by pg_dump version 9.1.21
+-- Started on 2016-12-07 10:32:25
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- TOC entry 8 (class 2615 OID 24664)
+-- Name: friends; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA friends;
+
+
+ALTER SCHEMA friends OWNER TO postgres;
+
+--
+-- TOC entry 1 (class 3079 OID 11639)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 1952 (class 0 OID 0)
+-- Dependencies: 1
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = friends, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 178 (class 1259 OID 24751)
+-- Dependencies: 8
+-- Name: admin; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE admin (
+    user_id integer,
+    fname character varying(50),
+    lname character varying(50),
+    dob character varying(20),
+    gender character varying(10),
+    adhar character varying(20),
+    state character varying(50),
+    pin character varying(6),
+    mobile character varying(11),
+    email character varying(50)
+);
+
+
+ALTER TABLE friends.admin OWNER TO postgres;
+
+--
+-- TOC entry 163 (class 1259 OID 24665)
+-- Dependencies: 8
+-- Name: appointment; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE appointment (
+    id integer,
+    request_date character varying(20),
+    doctor_id integer,
+    patient_id character varying,
+    disease character varying,
+    start3 text,
+    end2 text
+);
+
+
+ALTER TABLE friends.appointment OWNER TO postgres;
+
+--
+-- TOC entry 180 (class 1259 OID 24757)
+-- Dependencies: 8
+-- Name: contact_us; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE contact_us (
+    name character varying,
+    email character varying,
+    subject text,
+    message text
+);
+
+
+ALTER TABLE friends.contact_us OWNER TO postgres;
+
+--
+-- TOC entry 172 (class 1259 OID 24704)
+-- Dependencies: 8
+-- Name: counsellor; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE counsellor (
+    user_id integer,
+    fname character varying(50),
+    lname character varying(50),
+    dob character varying(20),
+    gender character varying(10),
+    adhar character varying(20),
+    state character varying(50),
+    pin character varying(6),
+    mobile character varying(11),
+    email character varying(50)
+);
+
+
+ALTER TABLE friends.counsellor OWNER TO postgres;
+
+--
+-- TOC entry 176 (class 1259 OID 24739)
+-- Dependencies: 8
+-- Name: counsellor_department; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE counsellor_department (
+    user_id integer,
+    department character varying
+);
+
+
+ALTER TABLE friends.counsellor_department OWNER TO postgres;
+
+--
+-- TOC entry 177 (class 1259 OID 24745)
+-- Dependencies: 8
+-- Name: department; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE department (
+    disease character varying,
+    speciality character varying,
+    departmentt character varying
+);
+
+
+ALTER TABLE friends.department OWNER TO postgres;
+
+--
+-- TOC entry 174 (class 1259 OID 24723)
+-- Dependencies: 8
+-- Name: doctor; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE doctor (
+    user_id integer,
+    fname character varying(50),
+    lname character varying(50),
+    dob character varying(20),
+    gender character varying(10),
+    adhar character varying(20),
+    state character varying(50),
+    pin character varying(6),
+    mobile character varying(11),
+    email character varying(50)
+);
+
+
+ALTER TABLE friends.doctor OWNER TO postgres;
+
+--
+-- TOC entry 173 (class 1259 OID 24715)
+-- Dependencies: 8
+-- Name: doctor_category; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE doctor_category (
+    speciality character varying NOT NULL
+);
+
+
+ALTER TABLE friends.doctor_category OWNER TO postgres;
+
+--
+-- TOC entry 175 (class 1259 OID 24729)
+-- Dependencies: 8
+-- Name: doctor_details; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE doctor_details (
+    user_id character varying,
+    speciality character varying
+);
+
+
+ALTER TABLE friends.doctor_details OWNER TO postgres;
+
+--
+-- TOC entry 164 (class 1259 OID 24668)
+-- Dependencies: 8
+-- Name: patient; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE patient (
+    user_id integer,
+    fname character varying(50),
+    lname character varying(50),
+    dob character varying(20),
+    gender character varying(10),
+    adhar character varying(20),
+    state character varying(50),
+    pin character varying(6),
+    mobile character varying(11),
+    email character varying(50),
+    disease character varying
+);
+
+
+ALTER TABLE friends.patient OWNER TO postgres;
+
+--
+-- TOC entry 165 (class 1259 OID 24671)
+-- Dependencies: 8
+-- Name: permissions; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE permissions (
+    id integer,
+    name character varying(50)
+);
+
+
+ALTER TABLE friends.permissions OWNER TO postgres;
+
+--
+-- TOC entry 166 (class 1259 OID 24674)
+-- Dependencies: 8
+-- Name: role; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE role (
+    id integer,
+    name character varying(100)
+);
+
+
+ALTER TABLE friends.role OWNER TO postgres;
+
+--
+-- TOC entry 167 (class 1259 OID 24677)
+-- Dependencies: 8
+-- Name: role_permission; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE role_permission (
+    permission_id integer,
+    role_name character varying,
+    on_table character varying
+);
+
+
+ALTER TABLE friends.role_permission OWNER TO postgres;
+
+--
+-- TOC entry 179 (class 1259 OID 24754)
+-- Dependencies: 8
+-- Name: treatment; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE treatment (
+    doctor_id integer,
+    patient_id integer
+);
+
+
+ALTER TABLE friends.treatment OWNER TO postgres;
+
+--
+-- TOC entry 168 (class 1259 OID 24680)
+-- Dependencies: 8
+-- Name: users; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE users (
+    user_id integer,
+    username character varying(100),
+    password character varying(50)
+);
+
+
+ALTER TABLE friends.users OWNER TO postgres;
+
+--
+-- TOC entry 169 (class 1259 OID 24683)
+-- Dependencies: 8
+-- Name: users_details; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE users_details (
+    first_name character varying(50),
+    last_name character varying(50),
+    dob date,
+    gender character varying(20),
+    mother_name character varying(100),
+    father_name character varying(100),
+    mobile_number character(11),
+    h_no character varying(20),
+    adhar character varying(16),
+    city_village character varying(100)
+);
+
+
+ALTER TABLE friends.users_details OWNER TO postgres;
+
+--
+-- TOC entry 170 (class 1259 OID 24686)
+-- Dependencies: 8
+-- Name: users_roles; Type: TABLE; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE users_roles (
+    user_id integer,
+    role_id integer
+);
+
+
+ALTER TABLE friends.users_roles OWNER TO postgres;
+
+SET search_path = public, pg_catalog;
+
+--
+-- TOC entry 171 (class 1259 OID 24689)
+-- Dependencies: 7
+-- Name: users; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE users (
+    user_id integer NOT NULL,
+    username character varying(250),
+    password character varying
+);
+
+
+ALTER TABLE public.users OWNER TO postgres;
+
+SET search_path = friends, pg_catalog;
+
+--
+-- TOC entry 1942 (class 0 OID 24751)
+-- Dependencies: 178 1945
+-- Data for Name: admin; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY admin (user_id, fname, lname, dob, gender, adhar, state, pin, mobile, email) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1927 (class 0 OID 24665)
+-- Dependencies: 163 1945
+-- Data for Name: appointment; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY appointment (id, request_date, doctor_id, patient_id, disease, start3, end2) FROM stdin;
+1	2016-12-07	24	136	heart_pain	2016-12-07 10:20:00	2016-12-07 10:21:00
+\.
+
+
+--
+-- TOC entry 1944 (class 0 OID 24757)
+-- Dependencies: 180 1945
+-- Data for Name: contact_us; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY contact_us (name, email, subject, message) FROM stdin;
+qwf	aeswf@yahoo.com	sa	as
+\.
+
+
+--
+-- TOC entry 1936 (class 0 OID 24704)
+-- Dependencies: 172 1945
+-- Data for Name: counsellor; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY counsellor (user_id, fname, lname, dob, gender, adhar, state, pin, mobile, email) FROM stdin;
+13	dsf	as	2016-12-10	Male	754	dscq	57	444444	sad@yahooo.com
+29	adsc	saf	2016-12-17	Male	9999	SWDFDW	6666	99999998	cc@yahoo.com
+31	adsc	saf	2016-12-17	Male	9999	SWDFDW	6666	99999998	cc@yahoo.com
+32	adsc	saf	2016-12-17	Male	9999	SWDFDW	6666	99999998	cc@yahoo.com
+33	adsc	saf	2016-12-17	Male	9999	SWDFDW	6666	99999998	cc@yahoo.com
+34	adsc	saf	2016-12-17	Male	9999	SWDFDW	6666	99999998	cc@yahoo.com
+30	adsc	saf	2016-12-17	Male	9999	SWDFDW	6666	99999998	cc@yahoo.com
+102	wsd	ewsf	2016-12-09	Male	64	asc	6897	9879	asc@yahoo.com
+103	wsd	ewsf	2016-12-09	Male	64	asc	6897	9879	asc@yahoo.com
+104	sdf	wef	2016-12-17	Male	84	dbhj	6854	84865	wef@yahoo.com
+108	wef	qwdf	2016-12-24	Male	32	wef	233	5555	scfe@yahoo.com
+109	ass32	ws	2016-12-10	Male	324	dsv	234	231456	qsd@yahoo.com
+110	vfdb123	dad23	2016-12-15	Male	435	sdg	244	346	dsvg@ufdb.com
+111	3553	rdsb	2016-12-14	Male	325	wewe	325	9560690932	ewf@yahoo.com
+112	2444	324	2016-12-03	Male	234	wdf	244	9560690932	asf@yahoo.com
+\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+122	asssd	qwd	2016-12-17	Male	456987	awdq	6666	9560690932	deepanshu@yahoo.com
+123	asssd	qwd	2016-12-17	Male	456987	awdq	6666	9560690932	deepanshu@yahoo.com
+124	asc	awf	2016-12-10	Male	3344	ascc	32332	96487	sd@yahoo.com
+25	deepanshu	kathuria	2016-12-10	Male	1234	haryana	125	9999999999	ya@yahoo.com
+\.
+
+
+--
+-- TOC entry 1940 (class 0 OID 24739)
+-- Dependencies: 176 1945
+-- Data for Name: counsellor_department; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY counsellor_department (user_id, department) FROM stdin;
+34	department1
+102	department1
+103	department1
+104	department1
+108	department1
+109	department1
+110	department1
+111	department1
+112	department1
+122	department1
+123	department1
+124	department1
+\.
+
+
+--
+-- TOC entry 1941 (class 0 OID 24745)
+-- Dependencies: 177 1945
+-- Data for Name: department; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY department (disease, speciality, departmentt) FROM stdin;
+heart	specility	\N
+heart	Cardiologists	\N
+heart	Cardiologists	\N
+Cardiologists	heart	department1
+heaart	Cardiologists	department1
+\.
+
+
+--
+-- TOC entry 1938 (class 0 OID 24723)
+-- Dependencies: 174 1945
+-- Data for Name: doctor; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY doctor (user_id, fname, lname, dob, gender, adhar, state, pin, mobile, email) FROM stdin;
+14	da	da	2016-05-19	Male	12388	hhhh	987	987456	dcd@yahoo.com
+15	vv	nn	2016-12-21	Male	54	sd	54	14141	sd@yhoo.com
+16	asdf	sacf	2016-12-23	Male	687	asf	6847	8556	asd@yahoo.com
+17	asdf	sacf	2016-12-23	Male	687	asf	6847	8556	asd@yahoo.com
+18	asdf	sacf	2016-12-23	Male	687	asf	6847	8556	asd@yahoo.com
+19	asdf	sacf	2016-12-23	Male	687	asf	6847	8556	asd@yahoo.com
+20	asdf	sacf	2016-12-23	Male	687	asf	6847	8556	asd@yahoo.com
+21	ad	wd	2016-12-17	Male	63548	wsd	86	6854	wd@uu.com
+22	ad	wd	2016-12-17	Male	63548	wsd	86	6854	wd@uu.com
+23	asdc	waedsc	2016-12-16	Male	548	edc	648	65	we@hh.com
+24	asdc	waedsc	2016-12-16	Male	548	edc	648	65	we@hh.com
+\.
+
+
+--
+-- TOC entry 1937 (class 0 OID 24715)
+-- Dependencies: 173 1945
+-- Data for Name: doctor_category; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY doctor_category (speciality) FROM stdin;
+surgeon
+\.
+
+
+--
+-- TOC entry 1939 (class 0 OID 24729)
+-- Dependencies: 175 1945
+-- Data for Name: doctor_details; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY doctor_details (user_id, speciality) FROM stdin;
+24	Cardiologists
+26	Cardiologists
+27	Cardiologists
+28	Cardiologists
+\.
+
+
+--
+-- TOC entry 1928 (class 0 OID 24668)
+-- Dependencies: 164 1945
+-- Data for Name: patient; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY patient (user_id, fname, lname, dob, gender, adhar, state, pin, mobile, email, disease) FROM stdin;
+1	ABHISHEK	GUPTA	1994-12-24	Male	654	UP	34225	654	sac@yahoo.com	\N
+2	ABHISHEK	GUPTA	1994-12-24	Male	654	UP	34225	654	sac@yahoo.com	\N
+3	afh	fsgj	5655-02-14	Male	125	fqf	126	1351	ag28024@gmail.com	\N
+5	sac	wsx	2016-11-08	Male	64	wqx	64	754	wx@yahoo.com	\N
+6	ab	ab	1992-12-12	Male	123	hjs	1234	142	avj@ha.com	\N
+7	ans	na	1996-12-12	Male	12	an	12	143	ag2804@gmail.com	\N
+8	af	af	1992-12-12	Male	12	qa	21	12	avqj@ha.com	\N
+9	abhishek	gupta	1992-12-12	Male	12	qw	12	13	q@gah.com	\N
+10	jj	kk	2016-12-16	Male	9999	hhh	5454	65656565	da@yahoo.com	\N
+11	sd	dac	2016-12-30	Male	6584	kjb	68547	999999	kjb@yahoo.com	kjhb
+101	sdvsf	wefww	2016-12-03	Male	68464	ksjbhj	5648	987441	kjscnkk@yahoo.com	\N
+105	ewf	d121	2016-12-06	Male	554	sefq	8	7797	we@yahoo.com	\N
+106	sdvv	324	2016-12-02	Male	dsf	deafr	erv	848	wvef@yahoo.com	\N
+107	sawfv	aswf	2016-12-09	Male	awf	QWEF	EAWAF	644	ewf@yahoo.com	\N
+113	dsvb3243	324	2016-12-09	Male	244	sdrv	24	2125	a@yahoo.com	\N
+114	244	fa	2016-12-16	Male	324	cawef	233	1848	sec@yahoo.com	\N
+115	425	ds	2016-12-10	Male	345	vefsrq	32r	9888	saf@yahoo.com	\N
+116	425	435	2016-12-23	Male	245	esf	4566	35155	asf@yahoo.co	\N
+117	t	y	2016-12-11	Male	yh	y	y	y	ag28024@gmail.com	\N
+118	jj7	a	2016-12-11	Male	q	1	54	jjj	jj@jjj.njj	\N
+119	vjvjbj	bkbkbk	2016-12-31	Male	jkbkkjb	bkjkj	546546	6464666	abhishekguptastp5@gmail.com	\N
+125	qqqqqq	qqqqqqq	1111-01-01	Male	aaaa	aaaa	aaaaa	q	abhishekguptastp5@gmail.com	\N
+128	h	dq	1111-01-01	Male	aaa	aaa	aa	c	a@ssss.com	\N
+129	j	s	1111-01-02	Male	aaaa	ss	ss	q	sd@yahoo.com	\N
+130	l	n	2016-12-03	Male	h	h	h	b	abhishekguptastp5@gmail.com	\N
+131	h	b	2016-12-08	Male	nnnnnn	n	n	n	abhishekguptastp5@gmail.com	\N
+132	b	b	2016-12-03	Male	b	bkjkj	b	b	sd@yahoo.com	\N
+133	ggg	g	2016-12-02	Male	bb	bkjkj	255	h	sd@yahoo.com	\N
+134	d	d	1222-12-12	Male	m	m	h	b	sd@yahoo.com	\N
+135	ggg	b	2016-12-03	Male	hhhhh	h	261001	n	abhishekguptastp5@gmail.com	\N
+136	q	q	1111-01-01	Male	q	1	q	q	1@ham.com	\N
+\.
+
+
+--
+-- TOC entry 1929 (class 0 OID 24671)
+-- Dependencies: 165 1945
+-- Data for Name: permissions; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY permissions (id, name) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1930 (class 0 OID 24674)
+-- Dependencies: 166 1945
+-- Data for Name: role; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY role (id, name) FROM stdin;
+1	admin
+2	counsellor
+3	doctor
+4	patient
+5	super_admin
+\.
+
+
+--
+-- TOC entry 1931 (class 0 OID 24677)
+-- Dependencies: 167 1945
+-- Data for Name: role_permission; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY role_permission (permission_id, role_name, on_table) FROM stdin;
+1	admin	doctor
+1	counsellor	doctor
+1	super_admin	doctor
+\.
+
+
+--
+-- TOC entry 1943 (class 0 OID 24754)
+-- Dependencies: 179 1945
+-- Data for Name: treatment; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY treatment (doctor_id, patient_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1932 (class 0 OID 24680)
+-- Dependencies: 168 1945
+-- Data for Name: users; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY users (user_id, username, password) FROM stdin;
+1	9999	dsc
+2	9999	123
+3	ffwfhf	1354
+5	3654	qsc
+6	qba	asx
+7	na	na
+8	as	as
+9	as	as
+10	555	ffff
+11	jhkj	jhgu
+12	df	zdvdv
+13	dc	saca
+14	asd	456
+15	efe	df
+16	asf	654
+17	asf	dfc
+18	asf	adf
+19	asf	dsf
+20	asf	asf
+21	wdxASW	SWD
+23	dsc	dsasc
+24	dsc	dsvas
+4	54	llll
+0	admin	pass1
+26	as	ss
+27	q	q
+28	agj	hhhhh
+29	asfwdv	99999
+30	llll	lll
+31	mmm	scaw
+32	zzzz	mmmm
+33	ooo	21212
+34	pppp	ncjjc
+100	super_admin	password
+101	sdzvds	asedwef
+102	sxc	ascf
+103	sxc	adscds
+104	waef	wef
+105	dscv	dswef
+106	dsav	reg
+107	we	fas
+108	er	dsvr
+109	asva	asfv
+110	cxv	dsb
+111	dsv	aewf
+112	saec	waew
+113	dsb	ewg
+114	dswv	ewf
+115	casv	cadwe
+116	eff	dwg
+117	g	gh
+118	436	hh
+25	deep	asv
+119	kbkjbk	bkjbkjb
+120	asfdsv	qwsefasc
+121	asfdsv	dsfdasv
+122	wwdqwd	wqdwd
+123	wwdqwd	wqdwd
+124	swfsa	awdasdsa
+125	aaaaaaa	aaaaaaa
+126	sssssssss	ssssssss
+127	ssssss	ggggggg
+128	qqqqg	aaaaaahh
+129	aggggdd	ssssssss
+130	hihhhhh	hhhhhhh
+131	nnnnn	nnnnnnn
+132	bbbbbb	bhhhhhh
+133	vjvjvjv	bbbbbbb
+134	hihhhhh	ndddddd
+135	hhhhhh	hhhhhhh
+136	111111	1111111
+\.
+
+
+--
+-- TOC entry 1933 (class 0 OID 24683)
+-- Dependencies: 169 1945
+-- Data for Name: users_details; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY users_details (first_name, last_name, dob, gender, mother_name, father_name, mobile_number, h_no, adhar, city_village) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1934 (class 0 OID 24686)
+-- Dependencies: 170 1945
+-- Data for Name: users_roles; Type: TABLE DATA; Schema: friends; Owner: postgres
+--
+
+COPY users_roles (user_id, role_id) FROM stdin;
+1	4
+2	4
+3	4
+4	4
+5	4
+6	4
+7	4
+8	4
+9	4
+10	4
+11	4
+15	3
+17	3
+18	3
+19	3
+20	3
+21	3
+22	3
+23	3
+24	3
+12	3
+29	2
+16	3
+13	3
+31	2
+32	2
+33	2
+34	2
+0	1
+14	3
+26	3
+27	3
+28	3
+30	2
+100	5
+101	4
+102	2
+103	2
+104	2
+105	4
+106	4
+107	4
+108	2
+109	2
+110	2
+111	2
+112	2
+113	4
+114	4
+115	4
+116	4
+117	4
+118	4
+119	4
+120	3
+121	3
+122	2
+123	2
+124	2
+125	4
+126	4
+127	4
+128	4
+129	4
+130	4
+131	4
+132	4
+133	4
+134	4
+135	4
+136	4
+25	2
+\.
+
+
+SET search_path = public, pg_catalog;
+
+--
+-- TOC entry 1935 (class 0 OID 24689)
+-- Dependencies: 171 1945
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY users (user_id, username, password) FROM stdin;
+\.
+
+
+SET search_path = friends, pg_catalog;
+
+--
+-- TOC entry 1825 (class 2606 OID 24722)
+-- Dependencies: 173 173 1946
+-- Name: doctor_category_pkey; Type: CONSTRAINT; Schema: friends; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY doctor_category
+    ADD CONSTRAINT doctor_category_pkey PRIMARY KEY (speciality);
+
+
+--
+-- TOC entry 1951 (class 0 OID 0)
+-- Dependencies: 7
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2016-12-07 10:32:27
+
+--
+-- PostgreSQL database dump complete
+--
+

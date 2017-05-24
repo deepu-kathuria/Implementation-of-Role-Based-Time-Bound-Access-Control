@@ -1,0 +1,1070 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"header",
+				"header()\tstandard Function"
+			],
+			[
+				"use",
+				"user_id\t(Patient.php)"
+			],
+			[
+				"pre",
+				"prepare"
+			],
+			[
+				"PDO",
+				"PDOException"
+			],
+			[
+				"Pa",
+				"PatientDao.php\t(index.php)"
+			],
+			[
+				"require",
+				"require_once"
+			],
+			[
+				"PA",
+				"PatientDao\t(index.php)"
+			],
+			[
+				"app",
+				"app_date"
+			],
+			[
+				"stm",
+				"stmt"
+			],
+			[
+				"user",
+				"user_role\t(index.php)"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"SESSION",
+				"_SESSION"
+			],
+			[
+				"pad",
+				"pdao"
+			],
+			[
+				"pa",
+				"password"
+			],
+			[
+				"pati",
+				"patient_registration.php"
+			],
+			[
+				"rqu",
+				"require_once\tLanguage Construct"
+			],
+			[
+				"mob",
+				"mobile"
+			],
+			[
+				"adha",
+				"adhar"
+			],
+			[
+				"req",
+				"require_once\t(index.php)"
+			],
+			[
+				"bs3bu",
+				"bs3-button:warning\tbs3-button-warning"
+			],
+			[
+				"bs3input",
+				"bs3-input:date\tbs3-input-date"
+			],
+			[
+				"bs3form",
+				"bs3-form:horizontal\tbs3-form-horizontal"
+			],
+			[
+				"bs3pa",
+				"bs3-panel:primary\tbs3-panel-primary"
+			],
+			[
+				"re",
+				"redirect\t(User.php)"
+			],
+			[
+				"falock",
+				"fa-lock\tfa-lock"
+			],
+			[
+				"faeye",
+				"fa-eye-slash\tfa-eye-slash"
+			],
+			[
+				"fauser-c",
+				"fa-pause-circle-o\tfa-pause-circle-o"
+			],
+			[
+				"log",
+				"logout\t(User.php)"
+			],
+			[
+				"bs3na",
+				"bs3-navbar:responsive\tbs3-navbar-responsive"
+			],
+			[
+				"bs3page",
+				"bs3-page-header\tbs3-page header"
+			],
+			[
+				"head",
+				"header()\tstandard Function"
+			],
+			[
+				"hea",
+				"header()\tstandard Function"
+			],
+			[
+				"US",
+				"User\t(User.php)"
+			],
+			[
+				"script",
+				"script\tTag"
+			],
+			[
+				"bs3col",
+				"bs3-col:5\tbs3-col-5"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"bs3l",
+				"bs3-label\tbs3-label"
+			],
+			[
+				"bs3panel",
+				"bs3-panel:warning\tbs3-panel-warning"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"bs3for",
+				"bs3-form:horizontal\tbs3-form-horizontal"
+			],
+			[
+				"for",
+				"for\tJS - For loop"
+			],
+			[
+				"style",
+				"style\tAttr"
+			],
+			[
+				"falef",
+				"fa-arrow-left\tfa-arrow-left"
+			],
+			[
+				"faphon",
+				"fa-mobile-phone\tfa-mobile-phone"
+			],
+			[
+				"ma",
+				"margin\t(index.html)"
+			],
+			[
+				"lor",
+				"lorem\tlorem - One sentence"
+			],
+			[
+				"overf",
+				"overflow-x\tstyl"
+			],
+			[
+				"over",
+				"overflow-scrolling\tstyl"
+			],
+			[
+				"bs3succes",
+				"bs3-label:success\tbs3-label-success"
+			],
+			[
+				"bs3",
+				"bs3-label\tbs3-label"
+			],
+			[
+				"rig",
+				"right"
+			],
+			[
+				"fa-fa",
+				"fa-facebook-official\tfa-facebook-official"
+			],
+			[
+				"footer",
+				"footer-wrapper\t(index.html)"
+			],
+			[
+				"bs3pan",
+				"bs3-panel:primary\tbs3-panel-primary"
+			],
+			[
+				"panel",
+				"panel-body\t(index.html)"
+			],
+			[
+				"heig",
+				"height\tstyl"
+			],
+			[
+				"hei",
+				"height\tstyl"
+			],
+			[
+				"dis",
+				"display\tstyl"
+			],
+			[
+				"backgr",
+				"background-color\tstyl"
+			],
+			[
+				"ticker",
+				"ticker-wapper\t(index.html)"
+			],
+			[
+				"mar",
+				"margin\tstyl"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"cur",
+				"cursor\tstyl"
+			],
+			[
+				"cont",
+				"container\t(index.html)"
+			],
+			[
+				"top",
+				"top-header\t(index.html)"
+			],
+			[
+				"back",
+				"background-color\tstyl"
+			],
+			[
+				"min",
+				"min-height\tstyl"
+			],
+			[
+				"falink",
+				"fa-linkedin-square\tfa-linkedin-square"
+			],
+			[
+				"fatwite",
+				"fa-twitter-square\tfa-twitter-square"
+			],
+			[
+				"faface",
+				"fa-facebook-official\tfa-facebook-official"
+			],
+			[
+				"fapho",
+				"fa-phone\tfa-phone"
+			],
+			[
+				"Task",
+				"TaskAtHandApp"
+			],
+			[
+				"facre",
+				"fa-credit-card\tfa-credit-card"
+			],
+			[
+				"fasi",
+				"fa-sign-out\tfa-sign-out"
+			],
+			[
+				"fause",
+				"fa-user-md\tfa-user-md"
+			],
+			[
+				"bs3im",
+				"bs3-image\tbs3-image"
+			],
+			[
+				"color",
+				"color-links-green"
+			],
+			[
+				"farigh",
+				"fa-arrow-right\tfa-arrow-right"
+			],
+			[
+				"bs3ul",
+				"bs3-list-group:linked\tbs3-list-group-linked"
+			],
+			[
+				"col-sm",
+				"col-sm-offset-1"
+			],
+			[
+				"bs3s",
+				"bs3-select:h\tbs3-select-h"
+			],
+			[
+				"bs3buto",
+				"bs3-button:info\tbs3-button-info"
+			],
+			[
+				"faen",
+				"fa-envelope-square\tfa-envelope-square"
+			],
+			[
+				"fa-env",
+				"fa-envelope-square\tfa-envelope-square"
+			],
+			[
+				"fa-",
+				"fa-modx\tfa-modx"
+			],
+			[
+				"fa-i",
+				"fa-inbox\tfa-inbox"
+			],
+			[
+				"fa-m",
+				"fa-mail-reply\tfa-mail-reply"
+			],
+			[
+				"fasup",
+				"fa-support\tfa-support"
+			],
+			[
+				"bs3inputch",
+				"bs3-input:checkbox\tbs3-input-checkbox"
+			],
+			[
+				"with",
+				"width"
+			],
+			[
+				"bs3but",
+				"bs3-lg-button\tbs3-lg-button"
+			],
+			[
+				"bs3-ch",
+				"bs3-input:checkbox\tbs3-input-checkbox"
+			],
+			[
+				"bs3tex",
+				"bs3-input:text\tbs3-input-text"
+			],
+			[
+				"styel",
+				"style\tAttr"
+			],
+			[
+				"fa-mo",
+				"fa-mobile-phone\tfa-mobile-phone"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"fa-p",
+				"fa-phone\tfa-phone"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"backg",
+				"background-repeat"
+			],
+			[
+				"ima",
+				"imageView"
+			],
+			[
+				"Ima",
+				"ImageView"
+			],
+			[
+				"bs3button",
+				"bs3-button:info\tbs3-button-info"
+			],
+			[
+				"inclue",
+				"include_once\tLanguage Construct"
+			],
+			[
+				"ses",
+				"session_start()\tsession Function"
+			],
+			[
+				"bs3ta",
+				"bs3-table:bordered\tbs3-table-bordered"
+			],
+			[
+				"gl-us",
+				"glyphicons-user\tglyphicons-user"
+			],
+			[
+				"bs3inpuT",
+				"bs3-input:text\tbs3-input-text"
+			],
+			[
+				"reu",
+				"require\tLanguage Construct"
+			],
+			[
+				"_",
+				"_FILES"
+			],
+			[
+				"stuNma",
+				"stuName"
+			],
+			[
+				"ref",
+				"refNo"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"form",
+				"form-label"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"bs3inps",
+				"bs3-input:submit\tbs3-input-submit"
+			],
+			[
+				"cel",
+				"cellspacing\tAttr"
+			],
+			[
+				"session",
+				"session_start\t(login.php)"
+			],
+			[
+				"stu",
+				"stuRef"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"sess",
+				"session_start()\tsession Function"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"styl",
+				"style\tTag"
+			],
+			[
+				"pass",
+				"password_hash\t(User.class.php)"
+			],
+			[
+				"is",
+				"is_loggedin\t(User.class.php)"
+			],
+			[
+				"bs3inputp",
+				"bs3-input:password\tbs3-input-password"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 103.0,
+		"last_filter": "PHP: Generate",
+		"selected_items":
+		[
+			[
+				"PHP: Generate",
+				"PHP: Generate Constructor for Class"
+			],
+			[
+				"them",
+				"Themr: List themes"
+			],
+			[
+				"",
+				"Add Folders To Project"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"new",
+				"Tasks: New"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"copy",
+				"File: Copy Path From Project"
+			],
+			[
+				"th",
+				"Themr: List themes"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pla",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"the",
+				"Themr: List themes"
+			],
+			[
+				"tas",
+				"Tasks: New document"
+			],
+			[
+				"cop",
+				"Copy File Path"
+			],
+			[
+				"copyas",
+				"File: Copy as Tag style"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"tmpl",
+				"Tmpl: Create php"
+			],
+			[
+				"copy as ",
+				"File: Copy as Tag style"
+			],
+			[
+				"listp",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"sche",
+				"Schemr: List all schemes"
+			],
+			[
+				"plai",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"tht",
+				"Themr: List themes"
+			],
+			[
+				"gutter",
+				"Preferences: GutterColor Settings – User"
+			],
+			[
+				"PHP: Generate Constructor",
+				"PHP: Generate Constructor for Class"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"ne",
+				"Tasks: New"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"copy fi",
+				"Copy File Path"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"ther",
+				"Themr: List themes"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 622.0
+	},
+	"console":
+	{
+		"height": 645.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/myproject/OHM_v1.0",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/library"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/myproject/OHM_v1.0/OHMS_v1.0.sublime-project",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/patient/index.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/patient/cancel_booking.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/patient/view_booking.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/patient/treatment_history.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/patient/feedback.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/change_password.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/patient/book_appointment.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/core/PatientDao.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/core/Patient.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/core/User.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/login.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/doctor/index.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/core/connection.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/patient_registration.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/core/Counsellor.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/core/CounsellorDao.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/core/Database.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/PatientDao.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/Patient.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/Doctor.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/counsellor_registration.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/templates/public_header.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/doctor_registration.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/index.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/templates/public_footer.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/DoctorDao.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/admin/index.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/logout.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/index.html",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/res/config.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/counsler/index.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/User.php",
+		"/C/xampp/htdocs/myproject/OHM_v1.0/connection.php",
+		"/C/xampp/htdocs/myproject/OES_v1.0/index.html",
+		"/C/xampp/htdocs/myproject/OES_v1.0/css/reset.css",
+		"/C/xampp/htdocs/myproject/DS_v1.0/human.todo",
+		"/E/_ins_soft/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+		"/E/_ins_soft/Sublime Text/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/myproject/TUTS/JS/DAY1",
+		"/C/xampp/htdocs/myproject/TUTS/JS/ten.html",
+		"/C/xampp/htdocs/myproject/TUTS/JS/nine.html",
+		"/C/xampp/htdocs/myproject/TUTS/JS/eight.html",
+		"/C/xampp/htdocs/myproject/TUTS/JS/seven.html",
+		"/C/xampp/htdocs/myproject/TUTS/JS/six.html",
+		"/C/xampp/htdocs/myproject/TUTS/JS/five.html",
+		"/C/xampp/htdocs/myproject/TUTS/JS/four.html",
+		"/C/xampp/htdocs/myproject/TUTS/JS/two.html",
+		"/C/xampp/htdocs/myproject/TUTS/JS/three.html",
+		"/C/xampp/htdocs/myproject/TUTS/JS/one.html",
+		"/C/xampp/htdocs/myproject/TODO_v1.0/classTask.php",
+		"/C/xampp/htdocs/myproject/TODO_v1.0/taskDao.php",
+		"/C/xampp/htdocs/myproject/TODO_v1.0/index.html",
+		"/C/xampp/htdocs/myproject/TUTS/HTML/SEMANTIC_MARKUP/semantic_markup.html",
+		"/C/xampp/htdocs/myproject/DS_v1.0/style.styl",
+		"/C/xampp/htdocs/myproject/darpansamachar1/index.php",
+		"/C/xampp/htdocs/myproject/DS_v1.0/index.php",
+		"/C/xampp/htdocs/myproject/DS_v1.0/humans.txt",
+		"/C/xampp/htdocs/myproject/DS_v1.0/bkp",
+		"/C/xampp/htdocs/myproject/TUTS/responsive/index.html",
+		"/C/xampp/htdocs/myproject/SSKM_v1.0/style.styl",
+		"/C/xampp/htdocs/myproject/SSKM_v1.0/index.html",
+		"/C/xampp/htdocs/myproject/SSKM_v1.0/css/style.css",
+		"/C/xampp/htdocs/myproject/SSKM_v1.0/css/reset.css",
+		"/C/xampp/htdocs/myproject/SSKM_v1.0/about.html",
+		"/C/xampp/htdocs/myproject/DS_v1.0/css/style.css",
+		"/C/xampp/htdocs/myproject/DS_v1.0/index.html",
+		"/C/xampp/htdocs/myproject/DS_v1.0/js/bootstrap.min.js",
+		"/C/xampp/htdocs/myproject/TUTS/index.html",
+		"/C/xampp/htdocs/myproject/TUTS/human.todo",
+		"/C/xampp/htdocs/myproject/TUTS/HTML5/App1/index.html",
+		"/C/xampp/htdocs/myproject/TUTS/HTML5/App1/taskAtHand.js",
+		"/C/xampp/htdocs/myproject/TUTS/HTML5/index.html",
+		"/C/xampp/htdocs/myproject/TUTS/HTML5/script.css",
+		"/C/xampp/htdocs/myproject/TUTS/HTML5/app.js",
+		"/C/xampp/htdocs/myproject/DV/client/start-new.php",
+		"/C/xampp/htdocs/myproject/DV/client/discover.php",
+		"/C/xampp/htdocs/myproject/DV/client/your-designers.php",
+		"/C/xampp/htdocs/myproject/DV/client/index.php",
+		"/C/xampp/htdocs/myproject/DV/admin/index.php",
+		"/C/xampp/htdocs/myproject/DV/index.php",
+		"/C/xampp/htdocs/myproject/DV/designer/index.php",
+		"/C/xampp/htdocs/myproject/DV/resetpassword.php",
+		"/C/xampp/htdocs/myproject/DV/login.php",
+		"/C/xampp/htdocs/myproject/DV/signup.php",
+		"/C/xampp/htdocs/myproject/sskm_website/index.html",
+		"/C/xampp/htdocs/myproject/javaFX/Demo.java",
+		"/C/xampp/htdocs/myproject/javaFX/ImageView/ImageViewExperiment.java",
+		"/C/xampp/htdocs/myproject/javaFX/day_one/One.java",
+		"/C/xampp/htdocs/myproject/Project3/index.php",
+		"/C/xampp/htdocs/myproject/Project3/dashboard.php",
+		"/C/xampp/htdocs/myproject/Project3/course.php",
+		"/C/xampp/htdocs/myproject/Project3/editCourse.php",
+		"/C/xampp/htdocs/myproject/Project3/includes/header.php",
+		"/C/xampp/htdocs/myproject/Project3/includes/footer.php",
+		"/C/xampp/htdocs/myproject/Project3/MyApp.java",
+		"/C/xampp/htdocs/myproject/Project3/task.php",
+		"/C/xampp/htdocs/myproject/Project3/factorial.php",
+		"/C/xampp/htdocs/myproject/Project3/demo.php",
+		"/C/xampp/htdocs/myproject/Project3/temp.html",
+		"/C/xampp/htdocs/myproject/Project3/upload.php",
+		"/C/xampp/htdocs/myproject/Project3/page1.html",
+		"/C/xampp/htdocs/myproject/Project3/page2.html",
+		"/C/xampp/htdocs/myproject/Project3/page3.html",
+		"/C/xampp/htdocs/myproject/Project3/page4.html",
+		"/C/xampp/htdocs/myproject/site1/stu/showCertificate.php",
+		"/C/xampp/htdocs/myproject/site1/stu/Dashboard.php",
+		"/C/xampp/htdocs/myproject/site1/stu/login.php",
+		"/C/xampp/htdocs/myproject/site1/stu/index.php",
+		"/C/xampp/htdocs/myproject/site1/admin/process.php",
+		"/C/xampp/htdocs/myproject/site1/admin/issueCertificate.php",
+		"/C/xampp/htdocs/myproject/site1/stu/certificate/SAMPLE-3PP.PDF",
+		"/C/xampp/htdocs/myproject/site1/stu/certificate/index.php",
+		"/C/xampp/htdocs/myproject/site1/stu/certificate/Dashboard.php",
+		"/C/xampp/htdocs/myproject/site1/stu/certificate/stu1.pdf",
+		"/C/xampp/htdocs/myproject/site1/demo1.html",
+		"/C/xampp/htdocs/myproject/site1/admin/login.php",
+		"/C/xampp/htdocs/myproject/site1/admin/index.php",
+		"/C/xampp/htdocs/myproject/site1/admin/logout.php",
+		"/C/xampp/htdocs/myproject/site1/stu/logout.php",
+		"/C/xampp/htdocs/myproject/site1/stu/connection.php",
+		"/C/xampp/htdocs/myproject/site1/stu/validateUser.php",
+		"/C/xampp/htdocs/myproject/site1/index.php",
+		"/C/xampp/htdocs/myproject/site1/index.php.txt",
+		"/C/Users/AJ DEV/Desktop/electrcom/stu_login.php",
+		"/C/Users/AJ DEV/Desktop/electrcom/emoji-release.min.js",
+		"/C/Users/AJ DEV/Desktop/electrcom/comment-reply.min.js",
+		"/C/Users/AJ DEV/Desktop/electrcom/js/jquery.min.js"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"app_date",
+			"date",
+			"First",
+			"Name",
+			"0074D9",
+			"icon",
+			"sid",
+			"sidebar",
+			"side_bar",
+			"side",
+			"col-xs-4 col-sm-4 col-md-4 col-lg-4",
+			"panel-title",
+			"panel-primary",
+			"\t\t\t\t\t",
+			"number",
+			"inputPassword",
+			"inputEmail",
+			"auto_complete_on_tab",
+			"container",
+			"\t",
+			"student",
+			"\t\t\t\t\t\t<",
+			"glyp",
+			"name",
+			"course",
+			"public",
+			"qual",
+			"086",
+			"511",
+			"qual",
+			"184",
+			"7168408",
+			"511",
+			"184",
+			"041",
+			"184",
+			"086",
+			"\f",
+			"passwd",
+			"username",
+			"    \n",
+			">;",
+			"anand",
+			"JDBCBatchUpdateExample",
+			"JDBCPreparedStatementSelectExample",
+			"JDBCPreparedStatementUpdateExample",
+			"JDBCPreparedStatementInsertExample",
+			"JDBCPreparedStatementCreateExample",
+			"JDBCBatchUpdateExample",
+			"JDBCStatementSelectExample",
+			"JDBCStatementDeleteExample",
+			"JDBCStatementUpdateExample",
+			"JDBCStatementInsertExample",
+			"Person",
+			"fxml",
+			"jquery",
+			"this",
+			" ☐",
+			" ",
+			"br",
+			">;",
+			"br",
+			"ticker",
+			"$scope",
+			"Anand",
+			"22",
+			"Anand",
+			"dataset",
+			"Anand",
+			"}}-{{",
+			"snap8",
+			".php"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-output":
+	{
+		"height": 122.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 122.0
+	},
+	"output.exec":
+	{
+		"height": 156.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
+	"project": "OHMS_v1.0.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cer",
+				"Class\\CertificateDao.class.php"
+			],
+			[
+				"da",
+				"Class\\Database.php"
+			],
+			[
+				"cerit",
+				"Class\\CertificateDao.class.php"
+			],
+			[
+				"admin",
+				"admin_dashboard.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
